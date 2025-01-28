@@ -1,0 +1,176 @@
+footer .container {
+	display: flex;
+	justify-content: space-evenly;
+
+	margin-bottom: 90px;
+}
+
+.footer__item:first-child {
+	width: 400px;
+}
+
+.footer__item:last-child {
+	width: 590px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.footer__subtitle {
+	position: relative;
+}
+
+.footer__subtitle::before {
+	content: '';
+
+	width: 36px;
+	height: 36px;
+
+	position: absolute;
+	top: -10px;
+	left: -2%;
+	z-index: -1;
+
+	background-color: #ffa501;
+	border-radius: 50%;
+}
+
+.form__wrapper {
+	display: flex;
+	justify-content: space-between;
+
+	margin-bottom: 30px;
+}
+
+.footer__title {
+	font-size: 36px;
+}
+
+.footer__line {
+	width: 60px;
+	height: 3px;
+
+	background-color: rgba(255, 165, 1, 1);
+}
+
+.form__item {
+	position: relative;
+}
+
+.footer__text {
+	font-size: 14px;
+}
+
+.footer__links {
+	display: flex;
+
+	gap: 25px;
+}
+
+.footer__links > li:first-child > a > img {
+	width: 30px;
+	height: 30px;
+	transform: rotate(90deg);
+}
+
+.footer__links > li:last-child > a > img {
+	width: 30px;
+	height: 30px;
+	transform: rotate(90deg);
+}
+
+.form__item label {
+	position: absolute;
+	top: -5px;
+	left: 15px;
+
+	padding: 0 8px;
+
+	font-size: 12px;
+	font-weight: 500;
+
+	background-color: white;
+}
+
+input {
+	width: 280px;
+	height: 45px;
+
+	border: 1px solid black;
+	padding: 12px 20px;
+}
+
+textarea {
+	width: 585px;
+	height: 190px;
+
+	border: 1px solid black;
+	padding: 12px 20px;
+}
+
+form > .form__item {
+	margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+	footer .container {
+		display: flex;
+		justify-content: center;
+
+		margin-bottom: 90px;
+	}
+
+	.footer__item:first-child {
+		display: none;
+	}
+
+	.footer__item:last-child {
+		width: 100%;
+		height: 600px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.form__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 0;
+	}
+
+	input {
+		width: 100%;
+		height: 45px;
+
+		border: 1px solid black;
+		padding: 12px 20px;
+
+		margin-bottom: 30px;
+	}
+
+	form {
+		text-align: center;
+	}
+
+	textarea {
+		width: 100%;
+		height: 145px;
+
+		border: 1px solid black;
+		padding: 12px 20px;
+	}
+
+	.form__item {
+		display: flex;
+		justify-content: center;
+
+		width: 100%;
+	}
+
+	form > .form__item {
+		margin-bottom: 25px;
+	}
+}

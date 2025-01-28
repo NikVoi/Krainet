@@ -1,0 +1,112 @@
+@import url('reset.css');
+@import url('button.css');
+@import url('header.css');
+@import url('experience.css');
+@import url('aside.css');
+@import url('navigation.css');
+@import url('footer.css');
+
+.container {
+	width: 1140px;
+	margin: auto;
+}
+
+main {
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+
+.title {
+	font-size: 48px;
+}
+
+.title--mb {
+	margin-bottom: 25px;
+}
+
+.center {
+	text-align: center;
+}
+
+.subtitle {
+	position: relative;
+	z-index: 1;
+
+	margin-bottom: 10px;
+	padding-left: 10px;
+
+	font-size: 24px;
+}
+
+.subtitle::before {
+	content: '';
+
+	width: 36px;
+	height: 36px;
+
+	position: absolute;
+
+	top: -20%;
+	left: 0;
+	z-index: -1;
+
+	background-color: #ffa501;
+	border-radius: 50%;
+}
+
+.subtitle--center::before {
+	top: -5px;
+	left: 50%;
+
+	transform: translateX(-50%);
+}
+
+.line {
+	width: 60px;
+	height: 3px;
+
+	background-color: rgba(255, 165, 1, 1);
+}
+
+.line--center {
+	margin: auto;
+}
+
+.error-message {
+	color: red;
+	font-size: 0.9rem;
+	margin-top: 5px;
+}
+
+input.error,
+textarea.error {
+	border-color: red;
+}
+
+@media (max-width: 768px) {
+	.container {
+		width: 100%;
+		padding: 0 10px;
+
+		margin: auto;
+	}
+
+	.title {
+		font-size: 26px;
+	}
+	.subtitle {
+		font-size: 16px;
+	}
+
+	.subtitle::before {
+		top: -60%;
+		left: 0;
+	}
+
+	.subtitle--center::before {
+		top: -5px;
+		left: 50%;
+
+		transform: translateX(-50%);
+	}
+}
